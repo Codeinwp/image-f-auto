@@ -151,7 +151,6 @@ class Image_F_Auto {
 
 		$plugin_admin = new Image_F_Auto_Admin( $this->get_plugin_name(), $this->get_version() );
 
-		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 		$this->loader->add_action( 'wp_ajax_fauto_save', $plugin_admin, 'fauto_save_callback' );
 		$this->loader->add_action( 'admin_footer', $plugin_admin, 'fauto_state' );
@@ -170,9 +169,6 @@ class Image_F_Auto {
 	private function define_public_hooks() {
 
 		$plugin_public = new Image_F_Auto_Public( $this->get_plugin_name(), $this->get_version() );
-
-		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
-		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 
 	}
 
