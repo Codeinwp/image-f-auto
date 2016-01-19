@@ -16,7 +16,7 @@
  * Plugin Name:       Image F Auto
  * Plugin URI:        themeisle.com
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Themeisle
  * Author URI:        themeisle.com
  * License:           GPL-2.0+
